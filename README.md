@@ -13,6 +13,8 @@ This is for the Warm-up tasks proposed by DBPedia as part of GSoC 2018.
 ### Running the RVA-based embedding Algorithm.
 1. I used the wikipedia [dump](https://dumps.wikimedia.org/enwiki/20180220/enwiki-20180220-pages-articles1.xml-p10p30302.bz2) as input to WikiExtractor.py
 2. Next, we clean the xml dump and extract plain text using the script WikiExtractor.py using the following :
-`python WikiExtractor.py ../enwiki-20180220-pages-articles1.xml -o text
-python WikiExtractor.py ../enwiki-20180220-pages-articles1.xml --links -o output`
+```
+python WikiExtractor.py ../enwiki-20180220-pages-articles1.xml -o text
+python WikiExtractor.py ../enwiki-20180220-pages-articles1.xml --links -o output
+```
 3. Then we make the global dictionary, AnchorDictionary.csv using the script MakeDictionary.py.
