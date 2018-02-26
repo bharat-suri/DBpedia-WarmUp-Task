@@ -9,4 +9,7 @@ This is for the Warm-up tasks proposed by DBPedia as part of GSoC 2018.
 - [ ] Train a Neural SPARQL model Machine Model on a DBPedia class of your choice.
 - [ ] Run the RVA-based embedding algorithm on a DBpedia subset (read [notebook](https://akshayjagatap.wordpress.com/)).
 - [ ] Run the [evaluation of existing KB embedding methods](https://github.com/nausheenfatma/embeddings/tree/master/gsoc2017-nausheen).
-### In the subsequent sections, I am going to explain the way in which these tasks were completed.
+
+### Running the RVA-based embedding Algorithm.
+1. I used the wikipedia [dump](https://dumps.wikimedia.org/enwiki/20180220/enwiki-20180220-pages-articles1.xml-p10p30302.bz2) as input to WikiExtractor.py
+2. 
