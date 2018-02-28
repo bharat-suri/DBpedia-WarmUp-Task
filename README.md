@@ -18,3 +18,10 @@ python WikiExtractor.py ../enwiki-20180220-pages-articles1.xml -o text
 python WikiExtractor.py ../enwiki-20180220-pages-articles1.xml --links -o output
 ```
 3. Then we make the global dictionary, AnchorDictionary.csv using the script MakeDictionary.py.
+```
+python MakeDictionary.py output/
+```
+4. Next up, we need the dictionary that maps the gender based pronouns with the help of dbo:Person, in EntityGender.csv .
+```
+python CheckPerson.py updatedWiki.py
+```
