@@ -23,5 +23,5 @@ python MakeDictionary.py output/
 ```
 4. Next up, we need the dictionary that maps the gender based pronouns with the help of dbo:Person, in EntityGender.csv .
 ```
-python CheckPerson.py updatedWiki
+python CheckPerson.py text
 ```
