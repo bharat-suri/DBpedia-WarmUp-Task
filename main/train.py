@@ -20,4 +20,4 @@ if __name__ == '__main__':
 	model = word2vec.Word2Vec(LineSentence(inp), size=400, window=5, min_count=5, workers=multiprocessing.cpu_count())
 
 	model.save(outp1)
-	model.wv.save_word2vec_format(outp2, binary=False)
+	model.wv.save_word2vec_format(outp2, binary=True)
