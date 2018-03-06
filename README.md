@@ -47,3 +47,4 @@ python RVA.py updatedWiki/
 python tsne.py
 ```
 ### Here is the final plot obtained after completely running the algorithm :
+![ ](https://github.com/tramplingWillow/DBpedia-WarmUp-Task/blob/master/src/Figure.png)
