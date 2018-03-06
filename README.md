@@ -16,7 +16,7 @@ This is for the Warm-up tasks proposed by DBPedia as part of GSoC 2018.
 2. Next, we clean the xml dump and extract plain text using the script WikiExtractor.py using the following :
 ```python
 python WikiExtractor.py ../enwiki-20180220-pages-articles1.xml -o text
-python WikiExtractor.py ../enwiki-20180220-pages-articles1.xml --links -o output
+python WikiExtractor.py ../enwiki-20180220-pages-articles1.xml -l -o output
 ```
 3. Then we make the global dictionary, AnchorDictionary.csv using the script MakeDictionary.py.
 ```python
@@ -34,4 +34,16 @@ This changes to :
 
 ```python
 python MakeDictionary.py updatedWiki/
+```
+6. We have everything we need to train our NN using the WikiTrainer.py module.
+```python
+python WikiTrainer.py updatedWiki/
+```
+7. Generate the embeddings using the RVA.py script
+```python
+python RVA.py updatedWiki/
+```
+8. Finally, we can plot the results : 
+```python
+python tsne.py
 ```
